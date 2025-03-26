@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Bootstrap CSS via CDN. -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -11,9 +12,40 @@
         crossorigin="anonymous"></script> -->
     <title>Bootstrap Admin Page</title>
 </head>
+<!-- Step-by-step instructions
 
+Set up the basic HTML structure:
+
+
+
+Create the sidebar:
+Use col-md-2 for the sidebar width on medium screens and above.
+Add the TECHUNI logo, navigation links, and FRIENDS section.
+
+Create the main content area:
+Use col-md-10 for the main content area.
+Add the top navigation with the search bar, profile section, and SELF-PACED section.
+Include the "Getting Started with Online Courses," "Continue Watching," "Course Preview," "Your Instructors," and "Your Mentors" sections using Bootstrap cards and grid.
+
+Style the content:
+Use Bootstrap's utility classes for spacing, typography, and basic styling.
+Add custom CSS for any specific styling not covered by Bootstrap. -->
 <body>
+    <!-- Basic HTML Structure -->
+    <div class="container-fluid"> <!-- Create a container-fluid to fill the entire viewport. -->
+        <!-- Divide the layout into 2 main sections: -->
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar"> 
+                <div class="sidebar-sticky">
+                    
+                </div>
+            </nav>
 
+            <!-- Main content area -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4"></main>
+        </div>
+    </div>
 </body>
 
 </html>
